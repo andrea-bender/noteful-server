@@ -16,7 +16,7 @@ const morganOption = NODE_ENV === 'production' ? 'tiny' : 'common';
 
 app.use(morgan(morganOption));
 
-const allowedOrigins = [ 'https://client.andreabender.now.sh' ];
+const allowedOrigins = [ 'https://client.andreabender.now.sh', 'https://client-nu.now.sh' ];
 app.use(
 	cors({
 		origin: function(origin, callback) {
